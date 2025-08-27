@@ -1,46 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Display HTML Template</title>
-    <style>
-        body {
-            font-family: monospace;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        pre {
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid #ccc;
-            overflow-x: auto;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
-    <h1>Task Tracker HTML Template</h1>
-    <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8" /&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-    &lt;title&gt;Task Tracker&lt;/title&gt;
-    &lt;link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="container"&gt;
-        &lt;h1&gt;Task Tracker&lt;/h1&gt;
-        &lt;img class="img-rectangle" src="{{ url_for('static', filename='img/azure-portal.png') }}" alt="Azure App Service Web" /&gt;
-        &lt;ul id="tasks"&gt;
-            &lt;li&gt;Task 1&lt;/li&gt;
-            &lt;li&gt;Task 2&lt;/li&gt;
-            &lt;li&gt;Task 3&lt;/li&gt;
-            &lt;li&gt;Task 4&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-    </pre>
+    <div class="container">
+        <h1>Task Tracker</h1>
+        <img class="img-rectangle" src="{{ url_for('static', filename='img/azure-portal.png') }}" alt="Azure App Service Web" />
+        <ul id="tasks">
+            <li>Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>
+            <li>Task 4</li>
+        </ul>
+    </div>
 </body>
 </html>
